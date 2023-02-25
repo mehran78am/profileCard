@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Profile Card</title>
+  </head>
+
+  <body onload="myFunction()">
+    <div id="loader"></div>
+    <div id="myDiv" class="animate-bottom">
+      <div class="container">
+        <div class="img">
+          <img src="assets/img/index.jpg" alt="icon-user" class="img-fluid" />
+        </div>
+
+        <div class="myInfo">
+          <h2 class="name">mehran mokhtari</h2>
+          <p class="job">front-end developer from <b>iran</b></p>
+          <p class="loc">
+            <i class="fa fa-map-marker"> </i>isfahan , najafabad
+          </p>
+        </div>
+
+        <div class="media">
+          <div class="media-inf">
+            <div class="num">1500</div>
+            <div>followers</div>
+          </div>
+
+          <div class="media-inf">
+            <div class="num">250</div>
+            <div>following</div>
+          </div>
+
+          <div class="media-inf">
+            <div class="num">115</div>
+            <div>articles</div>
+          </div>
+
+          <div class="media-inf">
+            <div class="num">102</div>
+            <div>works</div>
+          </div>
+        </div>
+
+        <div class="social">
+          <a href="#"> <i class="fa fa-linkedin"></i> </a>
+          <a href="#"> <i class="fa fa-instagram"></i></a>
+          <a href="#"> <i class="fa fa-twitter"></i> </a>
+          <a href="#"> <i class="fa fa-github"></i> </a>
+        </div>
+
+        <div class="btn-footer">
+          <button type="button" value="message">message</button>
+          <button type="button" value="follow">follow</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var myVar = setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }, 2500);
+      }
+    </script>
+  </body>
+</html>
